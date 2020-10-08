@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.GridClienteController">
+   <top>
+      <Pane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #0AAA91;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="181.0" layoutY="21.0" text="CONSULTA DE CLIENTES">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font></Label>
+            <Button fx:id="btnRegresar" layoutX="482.0" layoutY="19.0" mnemonicParsing="false" onAction="#regresar" style="-fx-background-color: #036B5B;" text="Regresar" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font></Button>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="650.0" prefWidth="600.0" style="-fx-background-color: #036B5B;" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane fx:id="grid" alignment="BOTTOM_RIGHT" layoutX="13.0" layoutY="55.0" prefHeight="243.0" prefWidth="575.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="434.6" minWidth="10.0" prefWidth="271.6" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="475.4" minWidth="10.0" prefWidth="272.4" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="83.19999237060547" minHeight="5.0" prefHeight="35.2" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="126.40000000000002" minHeight="0.0" prefHeight="54.400000000000006" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="134.0" minHeight="0.0" prefHeight="69.4" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="116.40001525878904" minHeight="10.0" prefHeight="86.19999999999999" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

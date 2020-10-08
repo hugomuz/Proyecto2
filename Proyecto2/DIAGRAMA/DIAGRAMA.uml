@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>controlador.GridClienteController</OriginalElement>
+  <nodes>
+    <node x="1846.380715555456" y="912.0">javafx.fxml.Initializable</node>
+    <node x="0.0" y="3378.0">controlador.IndController</node>
+    <node x="546.5751599999005" y="523.0">modelo.Empresa</node>
+    <node x="1207.6238579104374" y="1532.0">controlador.OrdenController</node>
+    <node x="575.0000000000001" y="3356.0">controlador.EmpController</node>
+    <node x="1683.1988172154247" y="148.0">modelo.Producto</node>
+    <node x="1907.495302132921" y="2652.0">controlador.InicioController</node>
+    <node x="449.47659499320264" y="148.0">modelo.Cliente</node>
+    <node x="2749.245302132921" y="0.0">javafx.application.Application.Parameters</node>
+    <node x="1105.4805962505682" y="1221.0">controlador.GridOrdenController</node>
+    <node x="832.2986979105369" y="1972.5">modelo.Usuario</node>
+    <node x="2679.745302132921" y="171.0">javafx.application.Application</node>
+    <node x="746.3377061043137" y="2674.0">otros.DataSistema</node>
+    <node x="1067.3738579104374" y="3015.0">controlador.SesionController</node>
+    <node x="315.0000000000001" y="3587.5">controlador.GridClienteController</node>
+    <node x="2179.495302132921" y="1254.0">controlador.GridProductoController</node>
+    <node x="2295.245302132921" y="1708.0">controlador.ProductoController</node>
+    <node x="2818.0786354662546" y="596.0">controlador.Proyecto2</node>
+    <node x="142.31547619047637" y="889.0">modelo.Individual</node>
+    <node x="910.1238579104373" y="757.0">modelo.Orden</node>
+    <node x="1336.3238172154247" y="0.0">otros.Utilerias</node>
+    <node x="1575.0634037928899" y="501.0">modelo.ItemOrden</node>
+    <node x="1203.7305962505682" y="4138.0">controlador.ClienteController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="controlador.SesionController" target="javafx.fxml.Initializable">
+      <point x="48.0" y="-115.5" />
+      <point x="1235.3738579104374" y="2955.0" />
+      <point x="1844.5634037928899" y="2955.0" />
+      <point x="1844.5634037928899" y="1181.0" />
+      <point x="1906.380715555456" y="1181.0" />
+      <point x="-60.0" y="27.0" />
+    </edge>
+    <edge source="controlador.Proyecto2" target="javafx.application.Application">
+      <point x="37.5" y="-38.0" />
+      <point x="2930.5786354662546" y="576.0" />
+      <point x="2946.4119687995876" y="576.0" />
+      <point x="106.66666666666652" y="182.5" />
+    </edge>
+    <edge source="controlador.GridClienteController" target="javafx.fxml.Initializable">
+      <point x="96.0" y="-104.5" />
+      <point x="531.0000000000001" y="3326.0" />
+      <point x="1896.995302132921" y="3326.0" />
+      <point x="1896.995302132921" y="1201.0" />
+      <point x="1954.380715555456" y="1201.0" />
+      <point x="-12.0" y="27.0" />
+    </edge>
+    <edge source="controlador.OrdenController" target="javafx.fxml.Initializable">
+      <point x="134.75" y="-490.0" />
+      <point x="1489.3738579104374" y="1512.0" />
+      <point x="1833.5634037928899" y="1512.0" />
+      <point x="1833.5634037928899" y="1171.0" />
+      <point x="1882.380715555456" y="1171.0" />
+      <point x="-84.0" y="27.0" />
+    </edge>
+    <edge source="javafx.application.Application.Parameters" target="javafx.application.Application">
+      <point x="45.25" y="60.5" />
+      <point x="2884.995302132921" y="146.0" />
+      <point x="2919.745302132921" y="146.0" />
+      <point x="80.0" y="-182.5" />
+    </edge>
+    <edge source="controlador.GridOrdenController" target="javafx.fxml.Initializable">
+      <point x="96.0" y="-115.5" />
+      <point x="1321.4805962505682" y="1161.0" />
+      <point x="1858.380715555456" y="1161.0" />
+      <point x="-108.0" y="27.0" />
+    </edge>
+    <edge source="controlador.GridProductoController" target="javafx.fxml.Initializable">
+      <point x="-60.0" y="-82.5" />
+      <point x="2239.495302132921" y="1171.0" />
+      <point x="2050.380715555456" y="1171.0" />
+      <point x="84.0" y="27.0" />
+    </edge>
+    <edge source="controlador.ClienteController" target="javafx.fxml.Initializable">
+      <point x="73.84615384615381" y="-137.5" />
+      <point x="1397.576750096722" y="4098.0" />
+      <point x="2168.995302132921" y="4098.0" />
+      <point x="2168.995302132921" y="1181.0" />
+      <point x="2026.380715555456" y="1181.0" />
+      <point x="60.0" y="27.0" />
+    </edge>
+    <edge source="modelo.Individual" target="modelo.Cliente">
+      <point x="72.75" y="-50.0" />
+      <point x="360.5654761904764" y="737.0" />
+      <point x="245.3820312438702" y="737.0" />
+      <point x="245.3820312438702" y="421.0" />
+      <point x="484.62365381673214" y="421.0" />
+      <point x="-84.3529411764705" y="116.5" />
+    </edge>
+    <edge source="controlador.IndController" target="javafx.fxml.Initializable">
+      <point x="122.91666666666663" y="-314.0" />
+      <point x="270.41666666666663" y="3316.0" />
+      <point x="1855.5634037928899" y="3316.0" />
+      <point x="1855.5634037928899" y="1191.0" />
+      <point x="1930.380715555456" y="1191.0" />
+      <point x="-36.0" y="27.0" />
+    </edge>
+    <edge source="modelo.Empresa" target="modelo.Cliente">
+      <point x="-76.0" y="-61.0" />
+      <point x="622.5751599999005" y="481.0" />
+      <point x="583.0354185226143" y="481.0" />
+      <point x="14.058823529411711" y="116.5" />
+    </edge>
+    <edge source="controlador.ProductoController" target="javafx.fxml.Initializable">
+      <point x="-25.25" y="-314.0" />
+      <point x="2421.495302132921" y="1512.0" />
+      <point x="2457.0555555555557" y="1512.0" />
+      <point x="2457.0555555555557" y="1161.0" />
+      <point x="2074.380715555456" y="1161.0" />
+      <point x="108.0" y="27.0" />
+    </edge>
+    <edge source="controlador.InicioController" target="javafx.fxml.Initializable">
+      <point x="0.0" y="-126.5" />
+      <point x="2027.495302132921" y="1201.0" />
+      <point x="1978.380715555456" y="1201.0" />
+      <point x="12.0" y="27.0" />
+    </edge>
+    <edge source="controlador.EmpController" target="javafx.fxml.Initializable">
+      <point x="125.0" y="-336.0" />
+      <point x="850.0000000000001" y="3336.0" />
+      <point x="2157.995302132921" y="3336.0" />
+      <point x="2157.995302132921" y="1191.0" />
+      <point x="2002.380715555456" y="1191.0" />
+      <point x="36.0" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.09745093616061358" x="1500.0" y="2206.5" />
+  <SelectedNodes>
+    <node>controlador.GridClienteController</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

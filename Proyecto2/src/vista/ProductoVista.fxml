@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="388.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ProductoController">
+   <children>
+      <Pane layoutY="70.0" prefHeight="382.0" prefWidth="706.0" style="-fx-background-color: black;">
+         <children>
+            <TableView fx:id="tabla" layoutX="234.0" layoutY="14.0" onMouseClicked="#click" prefHeight="295.0" prefWidth="463.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
+                  <TableColumn fx:id="colDescripcion" prefWidth="148.0" text="Descripcion" />
+                  <TableColumn fx:id="colPrecio" prefWidth="93.0" text="Precio Unidad" />
+                  <TableColumn fx:id="colCantidad" prefWidth="70.0" text="Cantidad" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnInsertar" layoutX="1.0" layoutY="246.0" mnemonicParsing="false" onAction="#insertar" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #F7DC6F;" text="Insertar" />
+            <Button fx:id="btnActualizar" layoutX="130.0" layoutY="243.0" mnemonicParsing="false" onAction="#actualizar" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #F7DC6F;" text="Actualizar" />
+            <Button fx:id="btnEliminar" layoutX="130.0" layoutY="287.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="26.0" prefWidth="89.0" style="-fx-background-color: #F7DC6F;" text="Eliminar" />
+            <VBox alignment="TOP_CENTER" layoutX="13.0" layoutY="-3.0" prefHeight="216.0" prefWidth="201.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="txtId" editable="false" promptText="Id" />
+                  <TextField fx:id="txtNombre" promptText="Nombre" />
+                  <TextField fx:id="txtDescripcion" promptText="Descripcion" />
+                  <TextField fx:id="txtPrecio" promptText="Precio Unidad" />
+                  <TextField fx:id="txtCantidad" promptText="Cantidad" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+               </padding>
+            </VBox>
+            <Button layoutX="1.0" layoutY="291.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #F7DC6F;" text="Nuevo" />
+            <Button fx:id="btnGrid" layoutX="14.0" layoutY="338.0" mnemonicParsing="false" onAction="#mostrarP" prefHeight="25.0" prefWidth="178.0" style="-fx-background-color: #F7DC6F;" text="GRID PRODUCTOS" />
+         </children>
+      </Pane>
+      <Pane prefHeight="69.0" prefWidth="706.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="203.0" layoutY="24.0" prefHeight="21.0" prefWidth="276.0" text="GESTION DE PRODUCTOS" textFill="#eaeaea">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnRegresar" layoutX="629.0" layoutY="22.0" mnemonicParsing="false" onAction="#regresar" style="-fx-background-color: #008399;" text="Regresar" textFill="#eae2e2" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

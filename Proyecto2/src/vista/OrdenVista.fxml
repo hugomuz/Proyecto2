@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.OrdenController">
+   <children>
+      <Pane layoutX="-8.0" layoutY="46.0" prefHeight="398.0" prefWidth="745.0" style="-fx-background-color: #008399;">
+         <children>
+            <TableView fx:id="tabla" layoutX="340.0" layoutY="14.0" onMouseClicked="#click" prefHeight="316.0" prefWidth="390.0" style="-fx-background-color: #FCF3CF;">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="40.0" text="Id" />
+                  <TableColumn fx:id="colFecha" prefWidth="96.0" text="fecha" />
+                  <TableColumn fx:id="colPrecioEnvio" prefWidth="94.0" text="Precio Envio" />
+                  <TableColumn fx:id="colEstado" prefWidth="85.0" text="Estado" />
+                  <TableColumn fx:id="colTotal" prefWidth="73.0" text="Total" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnInsertar" layoutX="31.0" layoutY="304.0" mnemonicParsing="false" onAction="#insertar" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: black;" text="Insertar" textFill="#f0e8e8" />
+            <Button fx:id="btnActualizar" layoutX="147.0" layoutY="304.0" mnemonicParsing="false" onAction="#actualizar" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: black;" text="Actualizar" textFill="#f8f4f4" />
+            <Button fx:id="btnEliminar" layoutX="149.0" layoutY="339.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: black;" text="Eliminar" textFill="WHITE" />
+            <Button layoutX="31.0" layoutY="339.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: black;" text="Nuevo" textFill="#f8f3f3" />
+            <ChoiceBox fx:id="chCliente" layoutX="130.0" layoutY="54.0" prefHeight="25.0" prefWidth="175.0" />
+            <ChoiceBox fx:id="chProducto1" layoutX="129.0" layoutY="94.0" prefHeight="25.0" prefWidth="113.0" />
+            <ChoiceBox fx:id="chProducto2" layoutX="129.0" layoutY="122.0" prefHeight="25.0" prefWidth="113.0" />
+            <Label layoutX="31.0" layoutY="58.0" text="Cliente">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="98.0" text="Producto 1">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="126.0" text="Producto 2">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="156.0" text="Precio Envio">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPrecio" layoutX="127.0" layoutY="152.0" prefHeight="25.0" prefWidth="181.0" />
+            <Label layoutX="30.0" layoutY="190.0" text="Tipo Envio">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="chTipoEnvio" layoutX="127.0" layoutY="186.0" prefHeight="25.0" prefWidth="181.0" />
+            <Label layoutX="32.0" layoutY="219.0" text="Estado">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="chEstado" layoutX="127.0" layoutY="215.0" prefHeight="25.0" prefWidth="181.0" />
+            <Label layoutX="33.0" layoutY="251.0" text="Dias Entrega">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="chDiasEntrega" layoutX="130.0" layoutY="247.0" prefHeight="25.0" prefWidth="62.0" />
+            <TextField fx:id="txtcantidad1" layoutX="246.0" layoutY="94.0" prefHeight="25.0" prefWidth="62.0" promptText="Cantidad" />
+            <TextField fx:id="txtCantidad2" layoutX="246.0" layoutY="122.0" prefHeight="25.0" prefWidth="62.0" promptText="Cantidad" />
+            <Button fx:id="btnDetalles" layoutX="266.0" layoutY="317.0" mnemonicParsing="false" onAction="#mas" style="-fx-background-color: black;" text="Detalles" textFill="#f8f3f3" />
+            <TextField fx:id="txtId" editable="false" layoutX="130.0" layoutY="23.0" prefHeight="25.0" prefWidth="84.0" promptText="Id" />
+            <Label layoutX="34.0" layoutY="27.0" text="Id">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="-1.0" prefHeight="49.0" prefWidth="738.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="176.0" layoutY="11.0" prefHeight="21.0" prefWidth="328.0" text="GESTION DE ORDENES DE COMPRA" textFill="#f8f7f7">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="regresar" layoutX="610.0" layoutY="9.0" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

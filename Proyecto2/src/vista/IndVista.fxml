@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.IndController">
+   <top>
+      <Pane prefHeight="80.0" prefWidth="90.0" style="-fx-background-color: #29299E;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="131.0" layoutY="25.0" prefHeight="23.0" prefWidth="299.0" text="GESTION CLIENTE INDIVIDIAL" textFill="#e4dada">
+               <font>
+                  <Font name="Cambria Math" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAtras" layoutX="524.0" layoutY="24.0" mnemonicParsing="false" onAction="#atras" style="-fx-background-color: #ABFB68;" text="Regresar" textFill="#322f2f" />
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="334.0" prefWidth="701.0" style="-fx-background-color: #008399;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tabla" layoutX="240.0" layoutY="2.0" onMouseClicked="#click" prefHeight="509.0" prefWidth="457.0" style="-fx-background-color: BLACK;">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="47.0" text="Id" />
+                  <TableColumn fx:id="colDpi" prefWidth="140.0" text="Dpi" />
+                <TableColumn fx:id="colNombre" prefWidth="150.0" text="Nombre" />
+                  <TableColumn fx:id="colDireccion" prefWidth="300.0" text="Direccion" />
+                  <TableColumn fx:id="colTelefono" prefWidth="90.0" text="Telefono" />
+              </columns>
+            </TableView>
+            <TextField fx:id="txtNombre" layoutX="48.0" layoutY="54.0" promptText="Nombre" />
+            <TextField fx:id="txtDireccion" layoutX="48.0" layoutY="91.0" promptText="Direccion" />
+            <TextField fx:id="txtTelefono" layoutX="48.0" layoutY="129.0" promptText="Telefono" />
+            <TextField fx:id="txtDpi" layoutX="48.0" layoutY="163.0" promptText="DPI" />
+            <Button fx:id="btnRegistrar" layoutX="17.0" layoutY="272.0" mnemonicParsing="false" onAction="#gestionRegistrar" prefHeight="26.0" prefWidth="214.0" text="Insertar" />
+            <Button fx:id="btnActualizar" layoutX="14.0" layoutY="404.0" mnemonicParsing="false" onAction="#actualizar" prefHeight="22.0" prefWidth="218.0" text="Actualizar" />
+            <Button fx:id="btnEliminar" layoutX="17.0" layoutY="315.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="28.0" prefWidth="214.0" text="Eliminar" />
+            <TextField fx:id="txtId" editable="false" layoutX="48.0" layoutY="14.0" promptText="Id" />
+            <Button fx:id="btnNuevo" layoutX="14.0" layoutY="359.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="31.0" prefWidth="217.0" text="Nuevo" />
+         </children>
+      </Pane>
+   </left>
+</BorderPane>
